@@ -5,9 +5,11 @@
 public class CrunchyrollController : ControllerBase
 {
     private readonly CrunchyrollDBContext _context;
+    private readonly Random rand;
     public CrunchyrollController(IServiceProvider service)
     {
         _context = service.GetRequiredService<CrunchyrollDBContext>();
+        rand = new Random();
     }
 
     [HttpGet("animes")]
@@ -26,6 +28,16 @@ public class CrunchyrollController : ControllerBase
         if (anime is not null)
             return Ok(anime);
         return BadRequest("No Anime Found");
+    }
+
+    [HttpGet("animerandom")]
+    public async Task<ActionResult> GetAnimeByRandom()
+    {
+        var animes = _context.Animes.ToList();
+        var anime = animes[rand.Next(0, animes.Count)];
+        if(anime is not null)
+            return Ok(anime);
+        return BadRequest();
     }
 
     [HttpGet("animesbyname")]

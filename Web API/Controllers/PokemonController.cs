@@ -5,9 +5,11 @@
 public class PokemonController : ControllerBase
 {
     private readonly PokemonDBContext _context;
+    private readonly Random rand;
     public PokemonController(IServiceProvider service)
     {
         _context = service.GetRequiredService<PokemonDBContext>();
+        rand = new Random();
     }
 
     [HttpGet("pokemons")]
@@ -22,11 +24,21 @@ public class PokemonController : ControllerBase
     [HttpGet("{nr}")]
     public async Task<ActionResult> GetPokemonByNr(int nr)
     {
-    {
         var pokemons = _context.Pokemons.Where(x => x.Nr == nr);
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
+    }
+
+    [HttpGet("pokemonrandom")]
+    public async Task<ActionResult> GetPokemonByRandom()
+    {
+        var pokemons = _context.Pokemons.ToList();
+        var pokemon = pokemons[rand.Next(0, pokemons.Count)];
+        if(pokemon is not null)
+            return Ok(pokemon);
+        return BadRequest();
+
     }
 
     [HttpGet("pokemonbyname")]

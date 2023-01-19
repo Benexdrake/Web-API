@@ -5,9 +5,11 @@
 public class IMDbController : ControllerBase
 {
     private readonly IMDbDBContext _context;
+    private readonly Random rand;
     public IMDbController(IServiceProvider service)
     {
         _context = service.GetRequiredService<IMDbDBContext>();
+        rand = new Random();
     }
 
     [HttpGet("movies")]
@@ -23,6 +25,16 @@ public class IMDbController : ControllerBase
     public async Task<ActionResult> GetMovieById(string Id)
     {
         var movie = _context.Movies.FindAsync(Id).Result;
+        if(movie is not null)
+            return Ok(movie);
+        return BadRequest();
+    }
+
+    [HttpGet("movierandom")]
+    public async Task<ActionResult> GetMovieByRandom()
+    {
+        var movies = _context.Movies.ToList();
+        var movie = movies[rand.Next(0,movies.Count)];
         if(movie is not null)
             return Ok(movie);
         return BadRequest();
@@ -49,8 +61,8 @@ public class IMDbController : ControllerBase
     [HttpGet("moviebyrating")]
     public async Task<ActionResult> GetMovieByRating(double rating)
     {
-        // Muss vorher Rating zu double statt string ändern
-        return Ok();
+        var movies = _context.Movies.Where(x => x.Rating >= rating);
+        return Ok(movies);
     }
 
     [HttpGet("moviebycast")]
