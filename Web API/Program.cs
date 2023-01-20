@@ -9,7 +9,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<CrunchyrollController>()
                 .AddScoped<IMDbController>()
-                .AddScoped<Pokemon>();
+                .AddScoped<Pokemon>()
+                .AddScoped<ICR_API, CR_API>()
+                .AddScoped<IIMDb_API, IMDb_API>()
+                .AddScoped<IPokemon_API, Pokemon_API>()
+                .AddScoped<Browser>();
 
 builder.Services.AddDbContext<CrunchyrollDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Crunchyroll")));
 builder.Services.AddDbContext<IMDbDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("IMDB")));

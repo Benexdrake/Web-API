@@ -1,14 +1,21 @@
-﻿namespace Web_API.Controllers;
+﻿using System.Diagnostics;
+
+namespace Web_API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
 public class CrunchyrollController : ControllerBase
 {
     private readonly CrunchyrollDBContext _context;
+    private readonly ICR_API _api;
+    private readonly Browser _browser;
     private readonly Random rand;
     public CrunchyrollController(IServiceProvider service)
     {
         _context = service.GetRequiredService<CrunchyrollDBContext>();
+        _api = service.GetRequiredService<ICR_API>();
+        _browser = service.GetRequiredService<Browser>();
+
         rand = new Random();
     }
 
@@ -114,5 +121,76 @@ public class CrunchyrollController : ControllerBase
         animeDb.Episodes = AE.Anime.Episodes;
         _context.SaveChanges();
         return Ok(AE.Anime);
+    }
+
+    // Crunchyroll Scrape
+    [HttpGet("crunchyrollscraper/geturls")]
+    public async Task<ActionResult> GetCrunchyrollUrls()
+    {
+        var urls = _api.GetAllAnimeUrlsAsync();
+
+        while(!urls.IsCompleted)
+        {
+            Console.WriteLine(_api.Message);
+            await Task.Delay(1000);
+        }
+        
+        return Ok(urls.Result);
+    }
+
+    [HttpGet("crunchyrollscraper/getanime")]
+    public async Task<ActionResult> GetAnime(string url)
+    {
+        var AE = _api.GetAnimewithEpisodes(url,2000);
+        if (AE is not null)
+            return Ok(AE);
+        else
+            return BadRequest();
+    }
+
+    [HttpGet("crunchyrollscraper/fullupdate")]
+    public async Task<ActionResult> GetFullUpdate(bool debug)
+    {
+        if(debug)
+            _browser.WebDriver = _browser.FirefoxDebug();
+
+        var urls = _api.GetAllAnimeUrlsAsync();
+
+        while (!urls.IsCompleted)
+        {
+            Console.WriteLine(_api.Message);
+            await Task.Delay(1000);
+        }
+
+        List<Anime_Episodes> AEs = new();
+
+        foreach (var url in urls.Result)
+        {
+            var AE = _api.GetAnimewithEpisodes(url, 2000).Result;
+            if(AE is not null)
+            {
+                AEs.Add(AE);
+            }
+        }
+        return Ok(AEs.ToArray());
+    }
+
+    [HttpGet("test")]
+    public async Task<ActionResult> Test()
+    {
+        var t1 = Task.Run(async () =>
+        {
+            _browser.WebDriver = _browser.FirefoxDebug();
+            var sw = Stopwatch.StartNew();
+            var ae = await _api.GetAnimewithEpisodes("https://www.crunchyroll.com/de/series/GRMG8ZQZR/one-piece", 2000);
+            Console.WriteLine("Task 2" + sw.Elapsed);
+            sw.Stop();
+            Console.WriteLine(ae.Episodes.Length);
+        });
+
+        await Task.WhenAll(t1);
+
+
+        return Ok();
     }
 }
