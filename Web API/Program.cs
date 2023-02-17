@@ -1,23 +1,34 @@
+using MongoDB.Driver;
+using Webscraper_API.Scraper.TCG_Magic.Controller;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<CrunchyrollController>()
-                .AddScoped<IMDbController>()
-                .AddScoped<Pokemon>()
-                .AddScoped<ICR_API, CR_API>()
-                .AddScoped<IIMDb_API, IMDb_API>()
-                .AddScoped<IPokemon_API, Pokemon_API>()
-                .AddScoped<Browser>();
+builder
+    .Services
+    .AddSingleton<MongoClient>(new MongoClient(builder.Configuration["MongoDb:IP"]))
+    .AddSingleton<Browser>()
 
-builder.Services.AddDbContext<CrunchyrollDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Crunchyroll")));
-builder.Services.AddDbContext<IMDbDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("IMDB")));
-builder.Services.AddDbContext<PokemonDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Pokemon")));
+    .AddScoped<CrunchyrollController>()
+    .AddScoped<IMDbController>()
+    .AddScoped<Dota2Controller>()
+    .AddScoped<InsightDigitalController>()
+    .AddScoped<SteamController>()
+    .AddScoped<PokemonController>()
+
+    .AddScoped<CrunchyrollDBContext>()
+    .AddScoped<IMDbDBContext>()
+    .AddScoped<PokemonDBContext>()
+    .AddScoped<Dota2DbContext>()
+    .AddScoped<MagicDbContext>()
+    .AddScoped<InsightDigitalDbContext>()
+    .AddScoped<SteamDbContext>();
+
 
 var app = builder.Build();
 

@@ -1,14 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MongoDB.Driver;
 
 namespace Web_API.Data
 {
-    public class CrunchyrollDBContext : DbContext
+    public class CrunchyrollDBContext
     {
-        public DbSet<Anime> Animes { get; set; }
-        public DbSet<Episode> Episodes { get; set; }
+        public IMongoCollection<Anime> Animes { get; set; }
+        public IMongoCollection<Episode> Episodes { get; set; }
 
-        public CrunchyrollDBContext(DbContextOptions<CrunchyrollDBContext> options) : base(options)
+        public CrunchyrollDBContext(IServiceProvider service)
         {
+            var config = service.GetRequiredService<IConfiguration>();
+            var client = service.GetRequiredService<MongoClient>();
+
+            var db = client.GetDatabase(config["MongoDb:DatabaseNames:Crunchyroll"]);
+
+            Animes = db.GetCollection<Anime>(config["MongoDb:CollectionNames:CrunchyrollAnimes"]);
+            Episodes = db.GetCollection<Episode>(config["MongoDb:CollectionNames:CrunchyrollEpisodes"]);
         }
     }
 }

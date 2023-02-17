@@ -1,0 +1,360 @@
+  {
+    "Id": "1599340",
+    "Title": "Lost Ark",
+    "Review": [
+      {
+        "isPositiv": false,
+        "ReviewCount": 4750
+      },
+      {
+        "isPositiv": true,
+        "ReviewCount": 189162
+      }
+    ],
+    "GameImageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/header.jpg",
+    "Screenshots": [
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_f86c68e6fe904392d8a08231121f860814125f62.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_489519a55f1fcef124413a36232598017429a8d2.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_fd839dd6657095e6e61c45bcaea0fabbf1434096.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_c4789527b9087517504af18aeec0e2df769a54db.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_59b4b089b53a3459797ce9b0f21d6e4ff85f15c6.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_10fb9cd7c9be78e1ca7822a433003f28d8a14926.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_4e7802861ea7a1cb72e75a2003bf8769d47f6c4a.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_0835a9016d0c453675994ec218a3dd70a73529ea.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_b9c562ad66414ec37cf448f2f9d19d70009129ef.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_ad65376ee41e614c8e28993168c294cb600e4777.1920x1080.jpg"
+    ],
+    "GameplayVideos": [
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256873072/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256873072/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256928004/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256928004/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256924517/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256924517/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256919147/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256919147/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256916253/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256916253/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256912549/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256912549/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256848011/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256848011/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256868938/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256868938/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256842029/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256842029/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256864450/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256864450/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256844629/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256844629/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256846426/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256846426/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256882712/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256882712/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256863859/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256863859/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256871558/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256871558/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256886936/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256886936/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256897302/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256897302/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256902046/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256902046/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256907976/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256907976/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256867772/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256867772/movie.293x165.jpg"
+      }
+    ],
+    "DescriptionSnippet": "Begib dich auf eine Odyssee nach der verschollenen Arche in einer riesigen und lebendigen Welt: Entdecke neue Länder, hebe verlorene Schätze und stelle dich packenden und actiongeladenen Kämpfen in diesem actiongeladenen und kostenlos spielbaren RPG.",
+    "Description": "Begib dich auf eine Odyssee nach der verschollenen Arche in einer riesigen und lebendigen Welt: Entdecke neue Länder, hebe verlorene Schätze und stelle dich packenden und actiongeladenen Kämpfen. Lege deinen Kampfstil in der Klasse oder fortgeschrittenen Klasse fest, passe deine Fertigkeit, Waffen und Ausrüstung individuell an und setze deine Fähigkeiten im Kampf gegen Feindeshorden, in epischen Bosskämpfen und gegen dunkle Kräfte bei der Quest nach der Macht der Arche ein in diesem actiongeladenen kostenlos spielbaren RPG.Entdecke eine Welt voller AbenteuerErkunde sieben weitläufige und vielfältige Kontinente sowie die dazwischenliegenden Meere und entdecke lebendige Kulturen, seltsame und fantastische Kreaturen sowie all die überraschenden Wunder. Tauche ein in die Geheimnisse von Arkesia, beweise deine Macht in Schlachten und Schlachtzügen, tritt gegen andere Spieler im PvP an, reise zu fernen Inseln auf der Suche nach verborgenen Reichtümern, stelle dich Horden von Feinden und kolossalen Bossen in der offenen Welt und mehr.Deine Odyssee erwartet dichStelle dich den unglaublich befriedigenden Kämpfen im ARPG-Stil und baue deinen Fortschritt in Quests, Raids und Kämpfen im MMO-Stil aus.  Egal, ob du alleine, in Gruppen mit Freunden oder im Verbund mit anderen Abenteurern in der Welt spielen willst, es wartet ein episches Abenteuer auf dich.  Stelle dich Kämpfen in der offenen Welt oder begib dich in Chaosdungeons, kämpfe in herausfordernden PVP-Duellen, setze deine Kräfte in epischen Quests ein, überfalle große und kleine Bosse und beweise dich im Kampf gegen die Dämonenlegion, um die Macht und das Licht der verschollenen Arche zu beanspruchen.Definiere deinen KampfLost Ark bietet einfach zu erlernende Features mit unerwarteter Tiefe und Raum für Anpassungen. Beginne dein Gameplay mit fesselnder Sammel- und Spielaktion und beherrsche anschließend deinen Kampf dank des einzigartigen Tripod-Systems. Schalte drei personalisierbare Klassen für alle deine Fähigkeiten frei, um deinen Kampfstil um mächtige Kontrolle zu erweitern.  Die stetig erweiterte Palette an ikonischen Klassen von Lost Ark, allesamt mit ihren individuellen fortgeschrittenen Klassen, bietet viele Erkundungsmöglichkeiten auf der Suche nach deinem individuellen Kampfstil.Das Gleiche gilt für andere Features: Während du deine Reise fortsetzt, wirst du „zivile“ Fähigkeiten, Handwerk, Gilden und soziale Systeme und andere reichhaltige Features finden, die der Welt Leben einhauchen. Unabhängig davon, ob du einfach nur durch die Spielwelt streifen oder tief in die Details eintauchen möchtest, bleibt dir alleine die Wahl überlassen.",
+    "ReleaseDate": "11. Feb. 2022",
+    "DevTeam": "Smilegate RPG",
+    "Publisher": "Amazon Games",
+    "Tags": [
+      "MMORPG",
+      "Kostenlos spielbar",
+      "Action-Rollenspiel",
+      "Mehrspieler",
+      "Rollenspiel",
+      "Hack and Slash",
+      "Action",
+      "MMO",
+      "Charakteranpassung",
+      "Abenteuer",
+      "PvP",
+      "Fantasy",
+      "PvE",
+      "Sexuelle Inhalte",
+      "Isometrisch",
+      "Online-Koop",
+      "Klassenbasiert",
+      "Gewalt",
+      "Blut und Verstümmelung",
+      "Einzelspieler"
+    ],
+    "IsFreeToPlay": true,
+    "Price": 0.0,
+    "DiscountPrice": 0.0,
+    "GameFeatures": [
+      "Einzelspieler",
+      "MMO",
+      "Online-PvP",
+      "Online-Koop",
+      "Steam-Errungenschaften",
+      "Käufe im Spiel",
+      "Teilweise Controllerunterstützung"
+    ],
+    "Languages": [
+      {
+        "Name": "Deutsch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Englisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Französisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Spanisch – Spanien",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      }
+    ],
+    "PcSpecs": [
+      {
+        "Information": "Setzt 64-Bit-Prozessor und -Betriebssystem voraus",
+        "OS": "Betriebssystem: Windows 10 (nur 64-bit)",
+        "CPU": "Prozessor: Intel i3 oder AMD Ryzen 3",
+        "RAM": "Arbeitsspeicher: 8 GB RAM",
+        "GPU": "Grafik: NVIDIA GeForce GTX 460 / AMD HD6850",
+        "DirectX": "DirectX: Version 9.0c",
+        "HardDisk": "Netzwerk: Breitband-Internetverbindung",
+        "AdditionalNote": "Speicherplatz: 50 GB verfügbarer Speicherplatz"
+      },
+      {
+        "Information": "Setzt 64-Bit-Prozessor und -Betriebssystem voraus",
+        "OS": "Betriebssystem: Windows 10 (nur 64-bit)",
+        "CPU": "Prozessor: Intel i5 oder AMD Ryzen 5",
+        "RAM": "Arbeitsspeicher: 16 GB RAM",
+        "GPU": "Grafik: NVIDIA GeForce GTX 1050",
+        "DirectX": "DirectX: Version 11",
+        "HardDisk": "Netzwerk: Breitband-Internetverbindung",
+        "AdditionalNote": "Speicherplatz: 50 GB verfügbarer Speicherplatz"
+      }
+    ]
+  },
+  {
+    "Id": "1938010",
+    "Title": "WILD HEARTS™",
+    "Review": [],
+    "GameImageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/header.jpg",
+    "Screenshots": [
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_4233515fd9b5df6ae550989f134b09f813ad4f7e.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_01040d18883546fd3ad9e16da35bc6d497b780a5.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_3d8534e417e534ac789d36bdd622606118ebe67f.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_db0f422e239826988c562ea7b2f03896e164a30d.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_aa243a5f3a9622fdfb1c57ff7dcb66810ee58077.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_6d572601ac0afb04519b0211caa296376c8cd0dc.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_ccb28e904440ccd78677cc9d9799f1c7d72fe7f5.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_05f1aa4f576bca9d91d742c511b4792232519bf7.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_06b924ca6c47c7c10b6397447dcbe1de64e1896e.1920x1080.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1938010/ss_7ec36c7ca779fd8b3918e402ffd5cf554bb2d1e6.1920x1080.jpg"
+    ],
+    "GameplayVideos": [
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256930276/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256930276/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256920240/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256920240/movie.293x165.jpg"
+      },
+      {
+        "VideoUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256920780/movie_max.mp4",
+        "ThumbnailUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/256920780/movie.293x165.jpg"
+      }
+    ],
+    "DescriptionSnippet": "Nutze uralte Technologie, um riesige Bestien zu erlegen.",
+    "Description": "WILD HEARTS™ ist eine einzigartige Interpretation des Jagd-Genres – hier gibt dir Technologie eine Chance, gegen riesige Bestien anzukommen, die mit der Macht der Natur erfüllt sind – entweder allein oder mit Freund:innen im nahtlosen Koop-Modus.Heute erinnert sich niemand mehr daran, warum die Kemono im einst florierenden Azuma wüten. Von Verzweiflung getrieben, setzen sie die gewaltige Macht der Natur in ihrer zerstörerischsten Form ein. Eine Zeit lang schien es, als könne sich niemand ihrer überwältigenden Macht entgegenstellen. Doch es gibt eine Person, die mit ihren Jagdkünsten die Saat der Hoffnung in sich trägt und, mit tödlichen Waffen und einer uralten Technologie namens \"Karakuri\" bewaffnet, den Ausgang dieser Schlacht entscheiden könnte.WILD HEARTS wurde von Omega Force, dem japanischen Studio hinter der DYNASTY WARRIORS-Reihe, entwickelt und nimmt dich mit auf ein episches Abenteuer in eine Fantasy-Welt, die vom feudalen Japan inspiriert wurde.",
+    "ReleaseDate": "16. Feb. 2023",
+    "DevTeam": "KOEI TECMO GAMES CO., LTD.",
+    "Publisher": "Electronic Arts",
+    "Tags": [
+      "Action",
+      "Abenteuer",
+      "Koop",
+      "Action-Abenteuer",
+      "Mehrspieler",
+      "Einzelspieler",
+      "Erkundung",
+      "Kreaturensammler",
+      "Hack and Slash",
+      "Soulslike",
+      "3D",
+      "Farbenfroh",
+      "Third-Person",
+      "Bausimulation",
+      "Herstellung",
+      "Drachen",
+      "Fantasy",
+      "Natur",
+      "Jagd",
+      "PvE"
+    ],
+    "IsFreeToPlay": false,
+    "Price": 69.99,
+    "DiscountPrice": 0.0,
+    "GameFeatures": [
+      "Einzelspieler",
+      "Plattformübergreifender Mehrspieler",
+      "Steam-Errungenschaften",
+      "Volle Controllerunterstützung"
+    ],
+    "Languages": [
+      {
+        "Name": "Deutsch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Englisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Französisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Italienisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Spanisch – Spanien",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Japanisch",
+        "Surface": true,
+        "Sound": true,
+        "Subtitle": true
+      },
+      {
+        "Name": "Koreanisch",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      },
+      {
+        "Name": "Polnisch",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      },
+      {
+        "Name": "Chinesisch (vereinfacht)",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      },
+      {
+        "Name": "Spanisch – Lateinamerika",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      },
+      {
+        "Name": "Chinesisch (traditionell)",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      },
+      {
+        "Name": "Brasilianisches Portugiesisch",
+        "Surface": true,
+        "Sound": false,
+        "Subtitle": true
+      }
+    ],
+    "PcSpecs": [
+      {
+        "Information": "Setzt 64-Bit-Prozessor und -Betriebssystem voraus",
+        "OS": "Betriebssystem: 64 bit Windows 10",
+        "CPU": "Prozessor: Intel Core i5-8400 / AMD Ryzen 5 2600",
+        "RAM": "Arbeitsspeicher: 12 GB RAM",
+        "GPU": "Grafik: GeForce GTX 1060 (VRAM 6GB) / Radeon RX 5500 XT (VRAM 8GB)",
+        "DirectX": "Netzwerk: Breitband-Internetverbindung",
+        "HardDisk": "Speicherplatz: 80 GB verfügbarer Speicherplatz",
+        "AdditionalNote": ""
+      },
+      {
+        "Information": "Setzt 64-Bit-Prozessor und -Betriebssystem voraus",
+        "OS": "Betriebssystem: 64 bit Windows 10",
+        "CPU": "Prozessor: Intel Core i7-8700K / AMD Ryzen 5 3600",
+        "RAM": "Arbeitsspeicher: 16 GB RAM",
+        "GPU": "Grafik: GeForce RTX 2070 (VRAM 8GB) / Radeon RX 5700 XT (VRAM 8GB)",
+        "DirectX": "Netzwerk: Breitband-Internetverbindung",
+        "HardDisk": "Speicherplatz: 80 GB verfügbarer Speicherplatz",
+        "AdditionalNote": ""
+      }
+    ]
+  }

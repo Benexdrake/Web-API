@@ -1,4 +1,6 @@
-﻿namespace Web_API.Controllers;
+﻿using Webscraper_API.Scraper.Steam.Models;
+
+namespace Web_API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -24,7 +26,18 @@ public class PokemonController : ControllerBase
     [HttpGet("{nr}")]
     public async Task<ActionResult> GetPokemonByNr(int nr)
     {
-        var pokemons = _context.Pokemons.Where(x => x.Nr == nr);
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Nr, nr);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.ToList();
+        if (pokemons is not null)
+            return Ok(pokemons);
+        return BadRequest();
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult> GetPokemonByNr(string id)
+    {
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Id, id);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.FirstOrDefault();
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
@@ -33,7 +46,7 @@ public class PokemonController : ControllerBase
     [HttpGet("pokemonrandom")]
     public async Task<ActionResult> GetPokemonByRandom()
     {
-        var pokemons = _context.Pokemons.ToList();
+        var pokemons = _context.Pokemons.FindAsync(_ => true).Result.ToList();
         var pokemon = pokemons[rand.Next(0, pokemons.Count)];
         if(pokemon is not null)
             return Ok(pokemon);
@@ -44,7 +57,8 @@ public class PokemonController : ControllerBase
     [HttpGet("pokemonbyname")]
     public async Task<ActionResult> GetPokemonByName(string name)
     {
-        var pokemons = _context.Pokemons.Where(x => x.Name.Contains(name));
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Name, name);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.FirstOrDefault();
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
@@ -53,7 +67,8 @@ public class PokemonController : ControllerBase
     [HttpGet("pokemonbytype")]
     public async Task<ActionResult> GetPokemonByType(string type)
     {
-        var pokemons = _context.Pokemons.Where(x => x.Type.Contains(type));
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Type, type);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.ToList();
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
@@ -62,7 +77,8 @@ public class PokemonController : ControllerBase
     [HttpGet("pokemonbyweakness")]
     public async Task<ActionResult> GetPokemonByWeakness(string weakness)
     {
-        var pokemons = _context.Pokemons.Where(x => x.Weakness.Contains(weakness));
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Weakness, weakness);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.ToList();
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
@@ -71,25 +87,25 @@ public class PokemonController : ControllerBase
     [HttpGet("pokemonbycategory")]
     public async Task<ActionResult> GetPokemonByCategory(string category)
     {
-        var pokemons = _context.Pokemons.Where(x => x.Category.Contains(category));
+        var filter = Builders<Pokemon>.Filter.Eq(x => x.Category, category);
+        var pokemons = _context.Pokemons.FindAsync(filter).Result.ToList();
         if (pokemons is not null)
             return Ok(pokemons);
         return BadRequest();
     }
 
-
-    // pokemon eintragen
-    [HttpPost("createpokemon/{nr}")]
-    public async Task<ActionResult> CreatePokemon(Pokemon[] pokemons, int nr)
+    // pokemon eintragen oder updaten
+    [HttpPost]
+    public async Task<ActionResult> CreateOrUpdate(Pokemon[] pokemons)
     {
-        var pokemonDb = _context.Pokemons.Where(x => x.Nr == nr).FirstOrDefault();
-        if(pokemonDb is null)
+        for (int i = 0; i < pokemons.Length; i++)
         {
-            foreach (var pokemon in pokemons)
-            {
-                _context.Add(pokemons);
-            }
-            _context.SaveChanges();
+            var filter = Builders<Pokemon>.Filter.Eq(x => x.Id, pokemons[i].Id);
+            var pokemonDb = _context.Pokemons.FindAsync(filter).Result.FirstOrDefault();
+            if(pokemonDb is null)
+                await _context.Pokemons.InsertOneAsync(pokemons[i]);
+            else
+                await _context.Pokemons.ReplaceOneAsync(filter, pokemons[i], new ReplaceOptions { IsUpsert = true });
         }
         return Ok(pokemons);
     }
